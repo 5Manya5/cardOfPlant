@@ -1,0 +1,159 @@
+@media screen and (max-width: 1210px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .search-head__input {
+    display: none;
+  }
+  .footer-navigation-pages {
+    margin-right: 20px;
+  }
+  .navigation-column-link {
+    padding-left: 14px;
+  }
+  .footer-navigation-user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-navigation-user .footer-navigation-item {
+    padding-left: 0;
+  }
+  .footer-navigation-user .footer-navigation-item .footer-icon {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .left-block__nav-head {
+    margin-left: 50px;
+  }
+  .left-block__nav-head .nav-head__li:nth-child(1) {
+    margin-right: 20px;
+  }
+  .left-block__nav-head .nav-head__li:nth-child(2) {
+    margin-right: 20px;
+  }
+  .left-block__nav-head .nav-head__li:nth-child(3) {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header-main .header__container .header__left-block {
+    justify-content: space-between;
+  }
+  .header-main .header__container .header__left-block .left-block__nav-head {
+    display: none;
+  }
+  .header-main .header__container .header__right-block {
+    display: none;
+  }
+  .header-main .header__container .header__right-block .right-block__search-head .search-head__btn {
+    display: none;
+  }
+  .header-main .header__container .header__right-block .right-block__btn-head .btn-head__heart .heart__btn {
+    display: none;
+  }
+  .header-main .header__container .rightBlockAdaptive {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-main .header__container .rightBlockAdaptive .bell {
+    display: block;
+    margin-right: 20px;
+  }
+  .header-main .header__container .rightBlockAdaptive .burger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .header-main .header__container .rightBlockAdaptive .burger span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    background-color: #3A4736;
+  }
+  .header-main .header__container .rightBlockAdaptive .burger span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+  .header-main .header__container .rightBlockAdaptive .burger span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+  .header-main .header__container .rightBlockAdaptive .burgerMenu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    border: 0.3px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    transform: translateY(-150%);
+    transition-duration: 0.3s;
+  }
+  .header-main .header__container .rightBlockAdaptive .burgerMenu li {
+    padding: 10px;
+  }
+  .header-main .header__container .rightBlockAdaptive .burgerMenu li a {
+    font-size: 16px;
+    line-height: 30px;
+    color: #3A4736;
+  }
+  .header-main .header__container .rightBlockAdaptive .activeMenu {
+    transform: translateY(0);
+    transition-duration: 0.3s;
+  }
+  .header-main .header__container .rightBlockAdaptive .activeBurger {
+    transition-duration: 0.3s;
+  }
+  .header-main .header__container .rightBlockAdaptive .activeBurger span:nth-of-type(1) {
+    display: none;
+  }
+  .header-main .header__container .rightBlockAdaptive .activeBurger span:nth-of-type(2) {
+    top: 50%;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+  .header-main .header__container .rightBlockAdaptive .activeBurger span:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+  }
+  footer {
+    height: 56px;
+  }
+  footer .footer-navigation {
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+    justify-content: space-around;
+  }
+  footer .footer-navigation .footer-logo {
+    display: none;
+  }
+  footer .footer-navigation .footer-navigation_home {
+    display: block;
+  }
+  footer .footer-navigation .footer-navigation_search {
+    display: block;
+    cursor: pointer;
+  }
+  footer .footer-navigation .footer-navigation_reg {
+    display: block;
+  }
+  footer .footer-navigation .footer-navigation_share {
+    display: block;
+    cursor: pointer;
+  }
+  footer .footer-navigation .footer-navigation-pages {
+    display: none;
+  }
+  footer .footer-navigation .footer-navigation-user {
+    display: none;
+  }
+}/*# sourceMappingURL=adaptive_header&footer.css.map */

@@ -1,0 +1,287 @@
+@media screen and (max-width: 1330px) {
+  .fikusContainer .fikusContainer_mainPartContainer_block {
+    max-width: 90%;
+    padding-right: 20%;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .textContainer_padding {
+    padding-left: 10px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer img {
+    margin-right: 12px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer_item {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer_item p {
+    font-family: "Raleway300", "Arial", sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block menu {
+    width: 128%;
+  }
+  .textContainerBlock .main_block .content .content_block_text {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .leftTitle {
+    padding-left: 20%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .fikusContainer_titlePartContainer {
+    padding-bottom: 40px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block {
+    background-color: #EEE4E2;
+    margin-top: 0;
+    padding-right: 0;
+    padding-top: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content {
+    position: static;
+    justify-content: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_mainImage {
+    display: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_adaptiveImage {
+    width: 50%;
+    padding-top: initial;
+    margin: 0;
+    display: flex;
+    position: relative;
+    width: 42%;
+    margin-top: -20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text {
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer {
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 0.5px solid rgba(135, 149, 126, 0.9);
+    border-radius: 0;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .one, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .two, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .three, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .four, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .five {
+    animation: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .one .fikusContainer_mainPartContainer_block_content_textContainer_item p, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .two .fikusContainer_mainPartContainer_block_content_textContainer_item p, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .three .fikusContainer_mainPartContainer_block_content_textContainer_item p, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .four .fikusContainer_mainPartContainer_block_content_textContainer_item p, .fikusContainer .fikusContainer_mainPartContainer_block_content_text .five .fikusContainer_mainPartContainer_block_content_textContainer_item p {
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block .plants-card_title {
+    display: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block .inBlock {
+    display: none;
+  }
+  .outBlock {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    border: 0.3px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .outBlock .menuContainer ul {
+    width: 90%;
+    display: flex;
+    padding-left: 0;
+    margin: 0 auto;
+    padding: 10px 14px;
+    justify-content: spase-between;
+    flex-wrap: wrap;
+  }
+  .outBlock .menuContainer ul li {
+    display: inline-block;
+    border-right: 1px solid #87957E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid #3A4736;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .outBlock .menuContainer ul li a {
+    position: relative;
+    font-family: "Raleway400", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3A4736;
+    opacity: 0.7;
+  }
+  .outBlock .menuContainer ul li a:hover, .outBlock .menuContainer ul li a:focus {
+    opacity: 1;
+  }
+  .outBlock .menuContainer ul li a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #3A4736;
+    content: "";
+    transition: width 0.2s;
+  }
+  .outBlock .menuContainer ul li a:hover:after, .outBlock .menuContainer ul li a:focus:after {
+    width: 100%;
+  }
+  .outBlock .menuContainer ul li a:active {
+    color: #87957E;
+  }
+  .outBlock .menuContainer ul li:last-child {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .fikusContainer_titlePartContainer {
+    padding: 4px 0 4px 0;
+  }
+  .fikusContainer_titlePartContainer .fikusContainer_titlePartBlock h1 {
+    margin: 4px 0 4px 0;
+    font-size: 30px;
+    line-height: 20px;
+    font-family: "Raleway500", "Arial", sans-serif;
+    font-weight: 500;
+  }
+  .fikusContainer_titlePartContainer .fikusContainer_titlePartBlock a {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block {
+    position: relative;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content {
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_adaptiveImage {
+    width: 40vw;
+    height: 420px;
+  }
+  .outBlock {
+    margin-top: 370px;
+    border: 0.3px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .textContainerBlock .title {
+    display: block;
+  }
+  .textContainerBlock .title h2 {
+    font-family: "Raleway500", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0;
+  }
+  .textContainerBlock .leftTitle {
+    display: none;
+  }
+  .textContainerBlock .main_block {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .textContainerBlock .main_block .slider {
+    width: 100%;
+    padding-bottom: 100px;
+    border: none;
+  }
+  .textContainerBlock .main_block .slider .adaptiveTitle {
+    width: 80%;
+    display: block;
+    padding: 10px 0 10px 40px;
+    margin-bottom: 40px;
+    margin-left: -40px;
+  }
+  .textContainerBlock .main_block .slider_imageInterior_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .textContainerBlock .main_block .content {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .textContainerBlock .main_block .content .rightTitle {
+    width: 70%;
+    margin-left: 0;
+    padding: 10px 0 10px 54px;
+  }
+  .textContainerBlock .main_block .content .content_block_text {
+    padding-right: 0%;
+  }
+  .textContainerBlock .main_block .content .content_block_text p {
+    font-family: "Raleway500", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+  }
+  .line {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer {
+    justify-content: flex-start;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer .fikusContainer_mainPartContainer_block_content_textContainer_item p {
+    padding-left: 10px;
+  }
+  .outBlock .menuContainer ul {
+    padding: 0;
+  }
+  .outBlock .menuContainer ul li {
+    padding: 2px 10px;
+  }
+  .outBlock .menuContainer ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .fikusContainer .fikusContainer_mainPartContainer_block_content {
+    justify-content: flex-start;
+    left: 0;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_adaptiveImage {
+    box-shadow: none;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer {
+    justify-content: flex-start;
+  }
+  .fikusContainer .fikusContainer_mainPartContainer_block_content_text .fikusContainer_mainPartContainer_block_content_textContainer img {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .outBlock .menuContainer ul {
+    flex-direction: column;
+  }
+  .outBlock .menuContainer ul li {
+    border: none;
+  }
+  .textContainerBlock .main_block .slider {
+    padding-bottom: 10px;
+  }
+  .textContainerBlock .main_block .content {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=adaptive_MainPart.css.map */

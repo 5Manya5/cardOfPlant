@@ -1,0 +1,751 @@
+@font-face
+    font-family: 'Raleway400'
+    src: url('fonts/Raleway-Regular400.ttf')
+    font-weight: 400
+
+@font-face
+    font-family: 'Raleway500'
+    src: url('fonts/Raleway-Medium500.ttf')
+    font-weight: 500
+
+@font-face
+    font-family: 'Raleway600'
+    src: url('fonts/Raleway-SemiBold600.ttf')
+    font-weight: 600
+
+$pink-color: #EEE4E2
+$green-color: #3A4736
+$max-width: 1200px
+%flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+%align-center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+%justefy-between
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+%justefy-center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    width: 100vw
+    height: 100%
+    margin: 0 auto
+    font-family: 'Raleway400', 'Arial', sans-serif
+    font-weight: 400
+    overflow-x: hidden
+
+ol,
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration
+    display: none
+
+body::-webkit-scrollbar
+    width: 10px
+    background-color: #f9f9fd
+
+body::-webkit-scrollbar-thumb
+    border-radius: 10px
+    background-color: #87957E
+
+body::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
+    border-radius: 10px
+    background-color: #f9f9fd
+
+.arrowTop
+    position: fixed
+    z-index: 1
+    bottom: 24px
+    right: 44px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+    display: none
+
+    & p
+        margin-top: 0
+        font-family: 'Raleway400', 'Arial', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 20px
+        color: #3A4736
+
+.show
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+.nav-head__li
+    margin-left: 2px
+    margin-right: 0
+
+.title
+    font-family: 'Raleway400', 'Arial', sans-serif
+    font-weight: 400
+    font-size: 32px
+    line-height: 20px
+    color: #3A4736
+
+.container
+    max-width: $max-width
+    margin: 0 auto
+
+    padding-top: 16px
+    padding-bottom: 16px
+
+    font-size: 20px
+    line-height: 20px
+
+.header-main
+    display: inline-block
+    background-color: #EDE1DE
+    min-width: 320px
+    top: 0
+    z-index: 100
+    width: 100%
+    position: sticky
+
+    .header__container
+        @extend %flex
+        @extend %align-center
+        @extend %justefy-between
+
+        .header__left-block
+            @extend %flex
+            @extend %align-center
+
+            .main-logo__img
+                width: 111px
+                height: 51px
+                padding: 3px 0px 0px
+
+            .left-block__nav-head
+                margin-left: 69px
+
+                .nav-head__ul
+                    @extend %flex
+                    padding-left: 0
+
+                .nav-head__li:nth-child(1)
+                    margin-right: 40px
+
+                .nav-head__li:nth-child(2)
+                    margin-right: 40px
+
+                .nav-head__li:nth-child(3)
+                    margin-right: 40px
+
+                .nav-head__btn
+                    color: #3A4736
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 20px
+                    -webkit-transition: -webkit-box-shadow 0.1s ease-out
+                    transition: -webkit-box-shadow 0.1s ease-out
+                    -o-transition: box-shadow 0.1s ease-out
+                    transition: box-shadow 0.1s ease-out
+                    transition: box-shadow 0.1s ease-out, -webkit-box-shadow 0.1s ease-out
+                    padding: 4px
+                    border-radius: 6px
+
+                .nav-head__btn:hover
+                    box-shadow: 0 0 0 1px #87957E
+                    color: rgba(58, 71, 54, 0.6549019608)
+
+        .header__right-block
+            @extend %flex
+            @extend %align-center
+
+            .right-block__search-head
+                @extend %flex
+                @extend %align-center
+                position: relative
+                margin-right: 20px
+
+                .search-head__input
+                    border: none
+                    border-radius: 6px
+                    background-color: rgba(81,80,81,.1490196078)
+                    width: 176px
+                    height: 40px
+                    padding: 8px
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 24px
+                    position: absolute
+                    right: 0px
+                    z-index: 12
+                    -webkit-transition: 0.7s
+                    -o-transition: 0.7s
+                    transition: 0.7s
+                    outline: none
+
+                .search-head__input::-moz-placeholder
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+
+                .search-head__input::placeholder
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+
+                .search-head__input:focus
+                    width: 200px
+
+                .search-head__btn
+                    position: absolute
+                    right: 11px
+                    z-index: 13
+
+                    .btn-head__img
+                        fill: #87957E
+
+                    .btn-head__img:hover
+                        fill: black
+
+            .right-block__btn-head
+                @extend %flex
+                @extend %align-center
+
+                .btn-head__heart
+                    margin-right: 22px
+
+                    .heart__btn
+                        width: 28px
+                        height: 23px
+                        fill: none
+
+                    .heart__btn:hover
+                        fill: #87957E
+
+                .btn-head__person.person__btn
+                    width: 28px
+                    height: 23px
+                    fill: none
+                    stroke: black
+
+                .btn-head__person.person__btn:hover
+                    fill: #87957E
+                    stroke: #87957E
+        .rightBlockAdaptive
+            display: none
+
+main
+    margin: 0 auto
+    background-color: $pink-color
+
+h2
+    font-family: 'Raleway500', 'Arial', sans-serif
+    font-weight: 500
+
+li
+    list-style-type: none
+    text-decoration: none
+
+a
+    text-decoration: none
+
+p
+    font-size: 16px
+    line-height: 20px
+
+img
+    display: block
+
+.fikusContainer
+
+    background-color: $pink-color
+    padding-bottom: 63px
+
+    &_titlePartContainer
+        background-color: #87957E
+        border: 1px solid $green-color
+        border-radius: 6px
+        padding-top: 20px
+        padding-bottom: 60px
+
+        .fikusContainer_titlePartBlock
+            max-width: $max-width
+            margin: 0 auto
+            color: $pink-color
+
+            & h1
+                margin-top: 20px
+                margin-bottom: 30px
+                font-family: 'Raleway500', 'Arial', sans-serif
+                font-size: 36px
+                font-style: normal
+                font-weight: 500
+                line-height: 20px
+
+            & ul
+                display: block
+                max-width: 1210px
+                padding-left: 0
+                margin: 0 auto
+
+                & li
+                    display: inline
+
+            & a
+                font-size: 16px
+                line-height: 30px
+                color: $pink-color
+
+            & li:last-child a
+                color: $green-color
+
+            &_list_arrow
+                display: inline-block
+                margin-left: 10px
+                margin-right: 10px
+                margin-bottom: -2.5px
+
+    .fikusContainer_mainPartContainer
+        padding: 0
+        width: 100%
+        background-color: $pink-color
+
+        &_block
+            position: relative
+            width: 1330px
+            margin: 0 auto
+            margin-top: -36px
+            padding-top: 54px
+            background-color: #FFFFFF
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25)
+            border-radius: 6px
+            &_content
+                position: relative
+                top: 0
+                left: 0
+                display: flex
+                justify-content: center
+                align-items: center
+
+                &_adaptiveImage
+                    display: none
+                &_mainImage
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 146px
+                    z-index: 2
+
+                    & img
+                        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25)
+                        z-index: 5
+
+                &_text
+                    position: absolute
+                    top: 25px
+                    left: 146px
+                    display: flex
+                    -webkit-box-orient: vertical
+                    -webkit-box-direction: normal
+                    -ms-flex-direction: column
+                    flex-direction: column
+                    justify-content: space-between
+                    width: 42%
+
+                    margin-left: -4.5px
+                    z-index: 0
+
+                    .fikusContainer_mainPartContainer_block_content_textContainer
+                        @extend %flex
+                        padding-left: 40px
+                        margin-bottom: 20px
+                        -webkit-box-pack: start
+                        -ms-flex-pack: start
+                        justify-content: flex-start
+
+                        background-color: $pink-color
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+                        border-radius: 0px 15px 15px 0px
+
+                        & img
+                            display: block
+                            margin-left: 16px
+                            margin-right: 36px
+
+                        #imageSize
+                            width: 40px
+                            height: 50px
+                            object-fit: scale-down
+
+                        &_item
+                            @extend %flex
+                            @extend %align-center
+
+                    .one
+                        animation: ani 0.2s linear forwards
+
+                    .two
+
+                        animation: ani 0.35s linear forwards
+
+                    .three
+
+                        animation: ani 0.5s linear forwards
+
+                    .four
+
+                        animation: ani 0.65s linear forwards
+
+                    .five
+
+                        animation: ani 0.8s linear forwards
+
+                    @keyframes ani
+                        0%
+                            transform: translateX(0)
+
+                        100%
+                            opacity: 1
+                            transform: translateX(489px)
+
+                    .fikusContainer_mainPartContainer_block_content_textContainer_item
+                        @extend %flex
+                        height: 50px
+
+                        padding-left: 16px
+
+                        color: $green-color
+
+                        & p
+                            font-family: 'Raleway400', 'Arial', sans-serif
+                            font-size: 20px
+                            line-height: 20px
+                            font-weight: 400
+                            padding-right: 10px
+
+                    .withoutBorder
+                        border: none
+
+            .inBlock
+                float: bottom
+                margin: 0
+                margin-top: 410px
+
+                .menuContainer ul
+                    @extend %flex
+                    justify-content: flex-start
+                    padding-left: 0
+                    margin: 0 auto
+                    padding-bottom: 24px
+                    padding-top: 40px
+                    padding-left: 90px
+
+                    & li
+                        display: inline-block
+                        border-right: 1px solid #87957E
+                        padding-right: 14px
+                        padding-left: 14px
+
+                    & li:last-child
+                        border-right: none
+
+                .menuContainer a
+                    position: relative
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 20px
+                    color: #3A4736
+                    opacity: 0.7
+
+                    &:hover,
+                    &:focus
+                        opacity: 1
+
+                    &:after
+                        display: block
+                        position: absolute
+                        left: 0
+                        width: 0
+                        height: 1px
+                        background-color: $green-color
+                        content: ""
+                        -webkit-transition: width 0.2s
+                        -o-transition: width 0.2s
+                        transition: width 0.2s
+
+                    &:hover:after,
+                    &:focus:after
+                        width: 100%
+
+.outBlock
+    display: none
+
+.textContainerBlock
+    max-width: $max-width
+    margin: 0 auto
+
+    .title
+        display: inline-block
+        background: #87957E
+        border: 1px solid $green-color
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25)
+        border-radius: 6px
+        color: $pink-color
+
+        & h2
+            margin: 0 auto
+            padding-top: 8px
+            font-size: 24px
+            line-height: 2px
+            font-weight: 500
+
+    .leftTitle
+        margin: 0
+        margin-left: -120px
+        margin-left: -100%
+        width: 58%
+        padding: 20px 0 20px 20px
+
+        & h2
+            margin: 0 auto
+            padding-left: calc(100% - 580px)
+
+    @keyframes leftTitleAni
+        0%
+            margin-left: -8000000px
+        30%
+            margin-left: -500px
+        60%
+            margin-left: -300px
+        100%
+            margin-left: -120px
+
+    .main_block
+        @extend %flex
+        @extend %justefy-center
+
+        .slider
+            padding-top: 30px
+
+            width: 44%
+            border-right: 1px solid $green-color
+            margin: 0 auto
+            padding-bottom: 73px
+
+            .adaptiveTitle
+                display: none
+
+            &_imageInterior_block
+                position: relative
+                width: 80%
+
+                &:hover
+                    -webkit-transform: scale(1.1)
+                    -ms-transform: scale(1.1)
+                    transform: scale(1.1)
+                    -webkit-transition-duration: 0.3s
+                    -o-transition-duration: 0.3s
+                    transition-duration: 0.3s
+
+                .slider_imageInterior_img
+                    width: 100%
+                    margin-bottom: 50px
+                    border-radius: 6px
+                    object-fit: cover
+
+                .slider_imageInterior_heart
+                    position: absolute
+                    top: 4px
+                    right: 4px
+
+                    padding: 4px 4px
+
+                    background: rgba(217, 217, 217, 0.6)
+                    border-radius: 6px
+
+                    cursor: pointer
+
+            .slider_imageInteriorLink
+                display: inline-block
+                padding-left: 94px
+
+                & a
+                    display: inline-block
+                    position: relative
+
+                    margin-right: 12px
+                    font-family: 'Raleway500', 'Arial', sans-serif
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 20px
+                    color: $green-color
+                    opacity: 0.6
+
+                    &:after
+                        display: block
+                        position: absolute
+                        left: 0
+                        width: 0
+                        height: 1px
+                        background-color: $green-color
+                        content: ""
+                        -webkit-transition: width 0.2s
+                        -o-transition: width 0.2s
+                        transition: width 0.2s
+
+                    &:hover:after,
+                    &:focus:after
+                        width: 100%
+
+                    &:hover,
+                    &:focus
+                        opacity: 1
+
+                & img
+                    display: inline-block
+                    margin-bottom: 2px
+
+        .content
+            width: 56%
+
+            margin-top: 32px
+            margin-bottom: 100px
+
+            .rightTitle
+                width: calc(100% + 120px)
+                margin-top: 6px
+                margin-left: -36px
+                padding: 20px 0 20px 54px
+
+            @keyframes rightTitleAni
+                0%
+                    margin-left: 8000000px
+
+                30%
+                    margin-left: 600px
+
+                60%
+                    margin-left: 300px
+
+                100%
+                    margin-left: -36px
+
+            .content_block_text
+                margin: 20px 0 54px 20px
+                color: $green-color
+                line-height: 23px
+
+                & p
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 17px
+                    line-height: 25px
+
+                h4
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 30px
+
+.line
+    width: 34%
+    height: 70px
+    margin: 0 auto
+    margin-top: 100px
+    border-top: 1px solid $green-color
+
+footer
+    background-color: #525D4D
+    height: -webkit-fit-content
+    height: -moz-fit-content
+    height: fit-content
+    margin: 0 auto
+
+.footer-navigation_home
+    display: none
+
+.footer-navigation_search
+    display: none
+
+.footer-navigation_reg
+    display: none
+
+.footer-navigation_share
+    display: none
+
+.footer-navigation
+    @extend %flex
+    @extend %justefy-between
+
+    .footer-logo
+        width: 200px
+        height: 100px
+        display: block
+
+        margin-top: 75px
+        margin-bottom: 75px
+
+    &-pages
+        @extend %flex
+        @extend %justefy-between
+        @extend %align-center
+
+    &-column
+        padding-left: 0
+        padding-right: 0
+
+        .navigation-column-link
+            color: #EDE1DE
+            display: block
+            font-family: 'Raleway400', 'Arial', sans-serif
+            font-weight: 400
+            font-size: 20px
+            line-height: 20px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 30px
+            white-space: nowrap
+
+    &-user
+        margin: 0
+        @extend %flex
+        @extend %align-center
+
+        .footer-navigation-item
+            padding-left: 10px
+            height: auto
+            cursor: pointer
+
+            .icon-vk
+                margin-right: 10px
+@import "adaptive_header&footer.sass"
+@import "adaptive_MainPart.sass"

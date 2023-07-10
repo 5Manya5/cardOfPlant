@@ -1,0 +1,164 @@
+
+@media screen and (max-width:1210px)
+
+    .container
+        margin: 0 auto
+        width: 90%
+
+    .search-head__input
+        display: none
+
+    .footer-navigation
+        &-pages
+            margin-right: 20px
+
+    .navigation-column-link
+        padding-left: 14px
+    .footer-navigation-user
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+
+        .footer-navigation-item
+            padding-left: 0
+
+            .footer-icon
+                object-fit: scale-down
+
+@media screen and (max-width: 1160px)
+    .left-block__nav-head
+        margin-left: 50px
+
+        .nav-head__li:nth-child(1)
+            margin-right: 20px
+
+        .nav-head__li:nth-child(2)
+            margin-right: 20px
+
+        .nav-head__li:nth-child(3)
+            margin-right: 20px
+
+@media screen and (max-width: 1100px)
+    .header-main
+        .header__container
+            .header__left-block
+                justify-content: space-between
+
+                .left-block__nav-head
+                    display: none
+            .header__right-block
+                display: none
+                .right-block__search-head
+                    .search-head__input
+                    .search-head__btn
+                        display: none
+
+                .right-block__btn-head
+                    .btn-head__heart
+                        .heart__btn
+                            display: none
+
+            .rightBlockAdaptive
+
+                display: flex
+                justify-content: space-around
+
+                .bell
+                    display: block
+                    margin-right: 20px
+
+                .burger
+                    width: 30px
+                    height: 30px
+                    position: relative
+                    z-index: 2
+                    overflow: hidden
+                    cursor: pointer
+                    transition-duration: 0.3s
+
+                    & span
+                        width: 30px
+                        height: 2px
+                        position: absolute
+                        top: 50%
+                        background-color: #3A4736
+
+                    & span:nth-of-type(2)
+                        top: calc(50% - 5px)
+
+                    & span:nth-of-type(3)
+                        top: calc(50% + 5px)
+
+                .burgerMenu
+                    position: fixed
+                    top: 10px
+                    right: 10px
+                    width: 200px
+                    border: 0.3px solid #000
+                    background: #FFF
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+                    padding: 10px
+                    transform: translateY(-150%)
+                    transition-duration: 0.3s
+
+                    & li
+                        padding: 10px
+                        & a
+                            font-size: 16px
+                            line-height: 30px
+                            color: #3A4736
+
+                .activeMenu
+                    transform: translateY(0)
+                    transition-duration: 0.3s
+
+                .activeBurger
+                    transition-duration: 0.3s
+                    & span:nth-of-type(1)
+                        display: none
+
+                    & span:nth-of-type(2)
+                        top: 50%
+                        transform: rotate(45deg)
+                        transition: transform 0.5s
+
+                    & span:nth-of-type(3)
+                        top: 50%
+                        transform: rotate(-45deg)
+                        transition: transform 0.5s
+
+    footer
+        height: 56px
+
+        .footer-navigation
+            margin: 0
+            margin-left: 40px
+            padding: 0
+            -ms-flex-pack: distribute
+            justify-content: space-around
+
+            .footer-logo
+                display: none
+            .footer-navigation_home
+                display: block
+
+            .footer-navigation_search
+                display: block
+                cursor: pointer
+
+            .footer-navigation_reg
+                display: block
+
+            .footer-navigation_share
+                display: block
+                cursor: pointer
+
+            .footer-navigation-pages
+                display: none
+
+            .footer-navigation-user
+                display: none

@@ -1,0 +1,348 @@
+$pink-color: #EEE4E2
+$green-color: #3A4736
+$max-width: 1200px
+
+%flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+%align-center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+%justefy-between
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+%justefy-center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+@media screen and (max-width:1330px)
+    .fikusContainer
+        .fikusContainer_mainPartContainer
+            &_block
+                max-width: 90%
+                padding-right: 20%
+
+                &_content
+                    &_text
+                        .textContainer_padding
+                            padding-left: 10px
+                        .fikusContainer_mainPartContainer_block_content_textContainer
+
+                            & img
+                                margin-right: 12px
+                            &_item
+                                padding-left: 0
+                                padding-right: 8px
+
+                                & p
+                                    font-family: 'Raleway300', 'Arial', sans-serif
+                                    font-size: 10px
+                                    line-height: 20px
+                                    font-weight: 300
+                menu
+                    width: 128%
+
+    .textContainerBlock
+        .main_block
+            .content
+                .content_block_text
+                    padding-right: 20px
+
+@media screen and (max-width:1230px)
+
+    .leftTitle
+        padding-left: 20%
+
+@media screen and (max-width:1100px)
+    .fikusContainer
+        &_titlePartContainer
+            padding-bottom: 40px
+
+        .fikusContainer_mainPartContainer
+            &_block
+                background-color: $pink-color
+                margin-top: 0
+                padding-right: 0
+                padding-top: 0
+                border: none
+                box-shadow: none
+
+                &_content
+                    position: static
+                    justify-content: none
+                    &_mainImage
+                        display: none
+                    &_adaptiveImage
+                        width: 50%
+                        padding-top: initial
+                        margin: 0
+                        display: flex
+                        position: relative
+                        width: 42%
+                        margin-top: -20px
+                        border-top-left-radius: 0
+                        border-top-right-radius: 0
+
+                    &_text
+                        width: 50%
+                        position: relative
+                        top: 0
+                        left: 0
+                        margin-left: 0
+
+                        .fikusContainer_mainPartContainer_block_content_textContainer
+                            padding: 0
+                            margin: 0
+                            padding-top: 10px
+                            padding-bottom: 10px
+                            border: none
+                            box-shadow: none
+                            border-bottom: 0.5px solid rgba(135, 149, 126, 0.9)
+                            border-radius: 0
+
+                        .one, .two, .three, .four, .five
+                            animation: none
+
+                            .fikusContainer_mainPartContainer_block_content_textContainer_item
+                                & p
+                                    padding-left: 40px
+                                    font-size: 14px
+                                    line-height: 22px
+
+                .plants-card_title
+                    display: none
+
+                .inBlock
+                    display: none
+    .outBlock
+        display: block
+        margin: 0 auto
+        margin-bottom: 34px
+
+        border: 0.3px solid #000
+        background: #FFF
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+        .menuContainer ul
+            width: 90%
+            display: flex
+            padding-left: 0
+            margin: 0 auto
+            padding: 10px 14px
+            justify-content: spase-between
+            flex-wrap: wrap
+
+            & li
+                display: inline-block
+                border-right: 1px solid #87957E
+                padding-top: 10px
+                padding-bottom: 10px
+                border-right: 1px solid #3A4736
+                padding-right: 14px
+                padding-left: 14px
+
+                & a
+                    position: relative
+                    font-family: 'Raleway400', 'Arial', sans-serif
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 20px
+                    color: #3A4736
+                    opacity: 0.7
+
+                    &:hover,
+                    &:focus
+                        opacity: 1
+
+                    &:after
+                        display: block
+                        position: absolute
+                        left: 0
+                        width: 0
+                        height: 1px
+                        background-color: $green-color
+                        content: ""
+                        -webkit-transition: width 0.2s
+                        -o-transition: width 0.2s
+                        transition: width 0.2s
+
+                    &:hover:after,
+                    &:focus:after
+                        width: 100%
+
+                    &:active
+                        color: #87957E
+
+            & li:last-child
+                border-right: none
+
+@media screen and (max-width:900px)
+
+    .fikusContainer
+
+        &_titlePartContainer
+            padding: 4px 0 4px 0
+
+            .fikusContainer_titlePartBlock
+
+                & h1
+                    margin: 4px 0 4px 0
+
+                    font-size: 30px
+                    line-height: 20px
+                    font-family: 'Raleway500', 'Arial', sans-serif
+                    font-weight: 500
+
+                & a
+                    font-size: 11px
+                    line-height: 22px
+
+        .fikusContainer_mainPartContainer
+            &_block
+                position: relative
+
+                &_content
+                    position: absolute
+                    top: -4px
+                    left: 0
+
+                    &_mainImage
+
+                    &_adaptiveImage
+                        width: 40vw
+                        height: 420px
+
+                    &_text
+
+                        .fikusContainer_mainPartContainer_block_content_textContainer
+
+                            .fikusContainer_mainPartContainer_block_content_textContainer_item
+                                & p
+
+    .outBlock
+        margin-top: 370px
+        border: 0.3px solid #000
+        background: #FFF
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    .textContainerBlock
+
+        .title
+            display: block
+
+            & h2
+                font-family: 'Raleway500', 'Arial', sans-serif
+                font-style: normal
+                font-weight: 500
+                line-height: 24px
+                padding: 0
+
+        .leftTitle
+            display: none
+
+        .main_block
+            flex-direction: column-reverse
+            justify-content: flex-start
+            .slider
+                width: 100%
+                padding-bottom: 100px
+                border: none
+
+                .adaptiveTitle
+                    width: 80%
+                    display: block
+                    padding: 10px 0 10px 40px
+                    margin-bottom: 40px
+                    margin-left: -40px
+
+                &_imageInterior_block
+                    width: 100%
+                    display: flex
+                    justify-content: center
+
+            .content
+                width: 100%
+
+                margin-top: 32px
+                .rightTitle
+                    width: 70%
+                    margin-left: 0
+                    padding: 10px 0 10px 54px
+
+                .content_block_text
+                    padding-right: 0%
+                    & p
+                        font-family: 'Raleway500', 'Arial', sans-serif
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 24px
+                        text-align: justify
+    .line
+        display: none
+
+@media screen and (max-width:580px)
+    .fikusContainer
+        .fikusContainer_mainPartContainer
+            &_block
+                &_content
+                    &_mainImage
+
+                    &_adaptiveImage
+                    &_text
+                        .fikusContainer_mainPartContainer_block_content_textContainer
+                            justify-content: flex-start
+
+                            .fikusContainer_mainPartContainer_block_content_textContainer_item
+                                & p
+                                    padding-left: 10px
+
+    .outBlock
+
+        .menuContainer ul
+            padding: 0
+
+            & li
+                padding: 2px 10px
+
+                & a
+                    font-size: 14px
+
+@media screen and (max-width:360px)
+    .fikusContainer
+        .fikusContainer_mainPartContainer
+            &_block
+                &_content
+                    justify-content: flex-start
+                    left: 0
+                    &_mainImage
+
+                    &_adaptiveImage
+                        box-shadow: none
+                    &_text
+                        .fikusContainer_mainPartContainer_block_content_textContainer
+                            justify-content: flex-start
+
+                            & img
+                                margin-left: 4px
+                                margin-right: 4px
+
+                            .fikusContainer_mainPartContainer_block_content_textContainer_item
+                                & p
+
+    .outBlock
+
+        .menuContainer ul
+            flex-direction: column
+
+            & li
+                border: none
+
+    .textContainerBlock
+        .main_block
+            .slider
+                padding-bottom: 10px
+            .content
+                margin-bottom: 0
